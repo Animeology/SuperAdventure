@@ -32,6 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblHitPoints = new System.Windows.Forms.Label();
+            this.lblGold = new System.Windows.Forms.Label();
+            this.lblExperience = new System.Windows.Forms.Label();
+            this.lblLevel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -70,11 +74,47 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Level:";
             // 
+            // lblHitPoints
+            // 
+            this.lblHitPoints.AutoSize = true;
+            this.lblHitPoints.Location = new System.Drawing.Point(110, 19);
+            this.lblHitPoints.Name = "lblHitPoints";
+            this.lblHitPoints.Size = new System.Drawing.Size(0, 13);
+            this.lblHitPoints.TabIndex = 4;
+            // 
+            // lblGold
+            // 
+            this.lblGold.AutoSize = true;
+            this.lblGold.Location = new System.Drawing.Point(110, 45);
+            this.lblGold.Name = "lblGold";
+            this.lblGold.Size = new System.Drawing.Size(0, 13);
+            this.lblGold.TabIndex = 5;
+            // 
+            // lblExperience
+            // 
+            this.lblExperience.AutoSize = true;
+            this.lblExperience.Location = new System.Drawing.Point(110, 73);
+            this.lblExperience.Name = "lblExperience";
+            this.lblExperience.Size = new System.Drawing.Size(0, 13);
+            this.lblExperience.TabIndex = 6;
+            // 
+            // lblLevel
+            // 
+            this.lblLevel.AutoSize = true;
+            this.lblLevel.Location = new System.Drawing.Point(110, 99);
+            this.lblLevel.Name = "lblLevel";
+            this.lblLevel.Size = new System.Drawing.Size(0, 13);
+            this.lblLevel.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 651);
+            this.Controls.Add(this.lblLevel);
+            this.Controls.Add(this.lblExperience);
+            this.Controls.Add(this.lblGold);
+            this.Controls.Add(this.lblHitPoints);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -92,6 +132,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblHitPoints;
+        private System.Windows.Forms.Label lblGold;
+        private System.Windows.Forms.Label lblExperience;
+        private System.Windows.Forms.Label lblLevel;
     }
 }
 
