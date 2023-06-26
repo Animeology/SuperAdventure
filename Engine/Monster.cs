@@ -8,6 +8,6 @@
         public int CurrentHP { get; set; }
         public int MaxDamage { get; set; }
         public int RewardXP { get; set; }
-        public int RewardDamage { get; set; }
+        public int RewardGold { get; set; }
     }
 }
