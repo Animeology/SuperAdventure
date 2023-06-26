@@ -17,7 +17,7 @@ namespace SuperAdventure
             lblExperience.Text = _player.ExperiencePoints.ToString();
             lblLevel.Text = _player.Level.ToString();
 
-            Location location = new Location(1, "Home", "Home Base");
+            Location location = new Location(1, "Home", "Home Base", null, null, null);
         }
     }
 }
