@@ -2,6 +2,12 @@
 {
     public class Quest
     {
+        public int ID {  get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int RewardXP { get; set; }
+        public int RewardGold { get; set; }
+        public Item RewardItem { get; set; }
         public Quest(int id, string name, string description, int rewardXP, int rewardGold)
         {
             ID = id;
@@ -10,12 +16,5 @@
             RewardXP = rewardXP;
             RewardGold = rewardGold;
         }
-
-        public int ID {  get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public int RewardXP { get; set; }
-        public int RewardGold { get; set; }
-        public Item RewardItem { get; set; }
     }
 }
