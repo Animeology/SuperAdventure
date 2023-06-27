@@ -19,5 +19,35 @@ namespace SuperAdventure
 
             Location location = new Location(1, "Home", "Home Base", null, null, null);
         }
+
+        void btnNorth_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        void btnEast_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        void btnSouth_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        void btnWest_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        void btnUseWeapon_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        void btnUsePotion_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
