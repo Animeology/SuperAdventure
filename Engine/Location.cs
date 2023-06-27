@@ -12,17 +12,13 @@
         public Location NorthLocation { get; set; }
         public Location EastLocation { get; set; }
         public Location WestLocation { get; set; }    
-        public Location NestLocation { get; set; }
+        public Location SouthLocation { get; set; }
         public Location(int id, string name, string description, 
-            Item itemRequired, Quest questAvailable, Monster monsterLivingHere)
+            Item itemRequired = null, Quest questAvailable = null, Monster monsterLivingHere = null)
         {
             ID = id;
             Name = name;
             Description = description;
-
-            itemRequired = null;
-            questAvailable = null;
-            monsterLivingHere = null;
 
             ItemRequiredToEnter = itemRequired;
             QuestAvailable = questAvailable;
