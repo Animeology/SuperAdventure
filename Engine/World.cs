@@ -45,7 +45,7 @@ namespace Engine
             PopulateLocations();
         }
 
-        private static void PopulateItems()
+        static void PopulateItems()
         {
             Items.Add(new Weapon(ITEM_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5));
             Items.Add(new Item(ITEM_ID_RAT_TAIL, "Rat tail", "Rat tails"));
@@ -59,7 +59,7 @@ namespace Engine
             Items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes"));
         }
 
-        private static void PopulateMonsters()
+        static void PopulateMonsters()
         {
             Monster rat = new Monster(MONSTER_ID_RAT, 5, 3, "Rat", 10, 3, 3);
             rat.LootItems.Add(new LootItem(ItemByID(ITEM_ID_RAT_TAIL), 75, false));
@@ -78,7 +78,7 @@ namespace Engine
             Monsters.Add(giantSpider);
         }
 
-        private static void PopulateQuests()
+        static void PopulateQuests()
         {
             Quest clearAlchemistGarden =
                 new Quest(
@@ -104,7 +104,7 @@ namespace Engine
             Quests.Add(clearFarmersField);
         }
 
-        private static void PopulateLocations()
+        static void PopulateLocations()
         {
             // Create each location
             Location home = new Location(LOCATION_ID_HOME, "Home", "Your house. You really need to clean up the place.");
