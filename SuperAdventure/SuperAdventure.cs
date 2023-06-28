@@ -262,9 +262,9 @@ namespace SuperAdventure
                     standardMonster.ID, standardMonster.Name, standardMonster.MaxDamage,
                     standardMonster.RewardXP, standardMonster.RewardGold);
 
-                foreach (LootItem lootItem in standardMonster.LootItems)
+                foreach (LootItem lootItem in standardMonster.LootTable)
                 {
-                    _currentMonster.LootItems.Add(lootItem);
+                    _currentMonster.LootTable.Add(lootItem);
                 }
 
                 cboWeapons.Visible = true;

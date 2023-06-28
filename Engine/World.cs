@@ -62,16 +62,16 @@ namespace Engine
         static void PopulateMonsters()
         {
             Monster rat = new Monster(MONSTER_ID_RAT, 5, 3, "Rat", 10, 3, 3);
-            rat.LootItems.Add(new LootItem(ItemByID(ITEM_ID_RAT_TAIL), 75, false));
-            rat.LootItems.Add(new LootItem(ItemByID(ITEM_ID_PIECE_OF_FUR), 75, true));
+            rat.LootTable.Add(new LootItem(ItemByID(ITEM_ID_RAT_TAIL), 75, false));
+            rat.LootTable.Add(new LootItem(ItemByID(ITEM_ID_PIECE_OF_FUR), 75, true));
 
             Monster snake = new Monster(MONSTER_ID_SNAKE, 5, 3, "Snake", 10, 3, 3);
-            snake.LootItems.Add(new LootItem(ItemByID(ITEM_ID_SNAKE_FANG), 75, false));
-            snake.LootItems.Add(new LootItem(ItemByID(ITEM_ID_SNAKESKIN), 75, true));
+            snake.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SNAKE_FANG), 75, false));
+            snake.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SNAKESKIN), 75, true));
 
             Monster giantSpider = new Monster(MONSTER_ID_GIANT_SPIDER,  20, 5, "Giant spider", 40, 10, 10);
-            giantSpider.LootItems.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_FANG), 75, true));
-            giantSpider.LootItems.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_SILK), 25, false));
+            giantSpider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_FANG), 75, true));
+            giantSpider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_SILK), 25, false));
 
             Monsters.Add(rat);
             Monsters.Add(snake);
